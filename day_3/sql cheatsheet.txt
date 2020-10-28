@@ -1,0 +1,14 @@
+mysql -u root -p
+
+
+create table <name> (<name type ...>);
+insert into <name> values (<tuple>);
+show <tables/rows>;
+use <db_name>;
+select database();
+
+select <rows, can add expression> from <table> where <condition> ORDER BY <col expression> <DESC>;
+create view <name> as <query>;
+
+update <table> set <attribute> = <value> where <condition>;
+delete from <table> where <condition>;
