@@ -3,7 +3,12 @@ public class ExceptionExample {
         var x = new Accounts();
         try {
             x.salarySlip(20);
+            int y = Integer.parseInt("5");
         } catch(AbsentiesException e) {
+            e.printStackTrace();
+        } catch(NumberFormatException e) {
+            e.printStackTrace();
+        } catch(Exception e) {
             e.printStackTrace();
         }
     }
