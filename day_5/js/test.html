@@ -1,11 +1,40 @@
 <html>
 
+<input id="E1">
+<input id="B1" type="button" value="click" onclick="test()">
+
+<br>
+
+First: <input id="no1"> <br>
+Second: <input id="no2"> <br>
+<input type="button" value="Add" onclick="add()"> <br>
+<input type="button" value="Subtract" onclick="subtract()"> <br>
+Result: <input id="result">
 <script>
+    let refno1 = window.document.getElementById("no1");
+    let refno2 = window.document.getElementById("no2");
+    let refno3 = window.document.getElementById("result");
     function test() {
-        alert("Hello")
+        let x = window.document.getElementById("E1");
+        x.value = "hello";
+    }
+    function check() {
+        if (refno1.value == "") {
+            alert("Please enter first number!");
+            refno1.focus();
+        }
+        else if (refno2.value == "") {
+            alert("Please enter second number!");
+            refno2.focus();
+        }
+    }
+    function add() {
+        check();
+        refno3.value = parseInt(refno1.value) + parseInt(refno2.value);
+    }
+    function subtract() {
+        check();
+        refno3.value = parseInt(refno1.value) - parseInt(refno2.value);
     }
 </script>
-
-<input type="button" value="click" onclick="test()">
-
 </html>

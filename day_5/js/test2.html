@@ -1,0 +1,21 @@
+<html>
+
+<input id="res" value="0"> <br>
+
+<input id="in" type="button" value="increment" onmousemove="increment()">
+<input id="de" type="button" value="decrement" onmousemove="decrement()">
+
+<script>
+
+    let res = window.document.getElementById("res");
+    let inc = window.document.getElementById("in");
+    let dec = window.document.getElementById("de");
+    function increment() {
+        res.value = parseInt(res.value) + 1;
+    }
+    function decrement() {
+        res.value = parseInt(res.value) - 1;
+    }
+</script>
+
+</html>

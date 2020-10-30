@@ -1,0 +1,19 @@
+<html>
+<body onmousemove="boom()">
+<span id="a" style="position:absolute;top:300;left:500">
+    Test
+</span>
+<script>
+    let fs = 10;
+    let ref = window.document.getElementById("a");
+    function boom() {
+        if (window.event.ctrlKey==true) fs++;
+        if (window.event.altKey==true) fs--;
+        ref.style.fontSize=fs;
+        ref.style.top = window.event.clientY;
+        ref.style.left = windows.event.clientX;
+    }
+</script>
+</body>
+
+</html>
