@@ -20,4 +20,8 @@ public class Records {
     public void addRecord(String name) {
         employees.add(name);
     }
+
+    public void removeRecord(int id) {
+        employees.remove(id);
+    }
 }
