@@ -3,4 +3,6 @@
     <string name="placeholder">this is a placeholder</string>
     <string name="randomize">Randomize</string>
     <string name="randomText">Push the button</string>
+    <string name="itemOne">Add</string>
+    <string name="itemTwo">Remove</string>
 </resources>
