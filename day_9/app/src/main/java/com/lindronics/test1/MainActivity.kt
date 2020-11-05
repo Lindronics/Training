@@ -1,5 +1,7 @@
 package com.lindronics.test1
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +29,15 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "asdf");
             Toast.makeText(this, "Randomizing...", Toast.LENGTH_SHORT).show()
             textField.text = data.randomName()
+
+        }
+        findViewById<Button>(R.id.launchActivity).setOnClickListener {
+            val intent = Intent(this, TestActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<Button>(R.id.google).setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.co.uk"))
+            startActivity(intent)
         }
     }
 
@@ -55,8 +66,8 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Added ${name}", Toast.LENGTH_SHORT).show()
 
                 }
-                builder.setNegativeButton("No") { _, _ -> Toast.makeText(this, "No", Toast.LENGTH_SHORT).show() }
-                builder.setNeutralButton("Neutral") { _, _ -> }
+                builder.setNegativeButton("No", null)
+//                builder.setNeutralButton("Neutral", null)
                 builder.show()
                 true
             }

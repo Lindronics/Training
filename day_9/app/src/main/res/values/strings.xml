@@ -5,4 +5,6 @@
     <string name="randomText">Push the button</string>
     <string name="itemOne">Add</string>
     <string name="itemTwo">Remove</string>
+    <string name="launchActivity">Launch activity!</string>
+    <string name="google">Launch Google!</string>
 </resources>
