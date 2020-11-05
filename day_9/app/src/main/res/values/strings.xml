@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Test1</string>
+    <string name="placeholder">this is a placeholder</string>
+    <string name="randomize">Randomize</string>
+    <string name="randomText">Push the button</string>
+</resources>
