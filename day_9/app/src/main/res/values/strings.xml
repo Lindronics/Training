@@ -7,4 +7,6 @@
     <string name="itemTwo">Remove</string>
     <string name="launchActivity">Launch activity!</string>
     <string name="google">Launch Google!</string>
+    <string name="start">Start service</string>
+    <string name="stop">Stop service</string>
 </resources>
