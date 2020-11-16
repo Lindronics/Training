@@ -1,0 +1,14 @@
+regno,name,physics,chemistry,maths,Client,Subject,salary
+14001,shafeeq,90,20,26,IBM,java,1000
+14002,james,120,27,32,HSBC,c sharp,1200
+14003,james,131,34,38,HSBC,python,1100
+14004,Saeed,12,,44,IBM,python,900
+14005,John,120,48,50,HSBC,java,600
+14006,Lucy,67,55,,HSBC,python,567
+14007,Tom,56,62,62,ONS,oracle,5678
+14008,Jason Bourn,,69,68,NBS,sql,876
+14009,Kajol,90,76,74,Barclays,php,900
+,,,,,,,899
+14011,Peter,12,13,14,ONS,php,766
+14012,Tom,56,62,62,ONS,oracle,5678
+14013,Ali,89,76,78,IBM,java,2300
